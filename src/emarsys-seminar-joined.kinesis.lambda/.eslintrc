@@ -1,0 +1,24 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-unexpected-multiline": "error",
+        "semi": "error",
+        "import/extensions": [
+            "error",
+            "ignorePackages"
+        ],
+        "import/no-unresolved": "off"
+    }
+}
