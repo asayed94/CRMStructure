@@ -21,6 +21,7 @@
     "peacock.color": "#113324",
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
         "source.fixAll": true
     },
     "[typescript]": {

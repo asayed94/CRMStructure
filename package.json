@@ -9,8 +9,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "echo \"Husky pre-commit\""
     }
+  },
+  "lint-staged": {
+    "*": "eslint '**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
