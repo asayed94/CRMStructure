@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  kinesis:
+    container_name: cas-kinesis
+    image: tddmonkey/kinesis-local
+    command: --port 4567 --createStreamMs 0 --deleteStreamMs 0
+    restart: always
+    ports:
+      - 4567:4567
+
+  dynamodb:
+    container_name: cas-dynamodb
+    image: amazon/dynamodb-local
+    command: -jar DynamoDBLocal.jar -inMemory
+    ports:
+      - 8000:8000
+  lambda:
+    container_name: cas-lambda
+    image: amazon/aws-lambda-nodejs
+    ports:
+      - 9000:8080

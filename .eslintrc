@@ -1,0 +1,63 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "prettier",
+        "sort-exports",
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "prettier",
+        "eslint:recommended",
+        "eslint-config-airbnb-base",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint-parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "rules": {
+        "no-shadow": "error",
+        "no-unexpected-multiline": "error",
+        "camelcase": "warn",
+        "arrow-spacing": "warn",
+        "max-len": "error",
+        "no-empty-function": "warn",
+        "no-use-before-define": "error",
+        "no-useless-rename": "error",
+        "comma-dangle": [
+            "warn",
+            "always-multiline"
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "no-unused-expressions": "off",
+        "no-return-await": "warn",
+        "no-unused-vars": "warn",
+        "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+        "semi": ["error", "never"],
+        "semi-style": ["error", "first"],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages"
+        ],
+        "import/no-unresolved": "off"
+    }
+}

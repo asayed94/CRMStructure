@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "target": "es2020",
+      "strict": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "outDir": "./tmp/build",
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+    },
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+    ]
+  }
+  
