@@ -1,3 +1,3 @@
 function aB(a: number) {
-    return a ;
+    return a  ;
 }
